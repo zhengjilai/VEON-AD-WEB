@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  .center-div {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+
+  <title>VEON*: Learning Vocabulary-Enhanced 3D Representation for Occupancy Prediction</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Learning Vocabulary-Enhanced 3D Representation for Occupancy Prediction</h1>
+            <div class="is-size-5 publication-authors">
+            <div class="title is-1 publication-title">
+                      <h3 class="title is-3">ECCV2024 (accepted) & IJCV (under review)</h3>
+                  </div>
+              
+              <!-- Paper authors -->
+              <span class="author-block">
+                  <span class="author-block">
+                    <a href="https://github.com/zhengjilai" target="_blank">Jilai Zheng</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=au87GKsAAAAJ&hl=en" target="_blank">Pin Tang</a><sup>1</sup>,
+                  </span>
+                <span class="author-block">
+                  <a href="https://zhongdao.github.io/" target="_blank">Zhongdao Wang</a><sup>2</sup>,</span>
+              <a href="https://wgqtmac.github.io/" target="_blank">Guoqing Wang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=P20Rk5oAAAAJ&hl=en" target="_blank">Xiangxuan Ren</a><sup>1</sup>,
+                  </span>
+                <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=4oxEdy4AAAAJ&hl=zh-CN" target="_blank">Bailan Feng</a><sup>2</sup>,
+                  </span>
+                <span class="author-block">
+                    <a href="https://vision.sjtu.edu.cn/" target="_blank">Chao Ma</a><sup>1</sup>,
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                      <span class="author-block"><sup>1</sup><a href="https://www.sjtu.edu.cn/"
+                              target="_blank">Shanghai Jiao Tong University</a>,</span>
+                      <span class="author-block"><sup>2</sup><a href="https://www.huawei.com/cn/"
+                              target="_blank">Huawei Noah's Ark Lab</a></span>
+                  </div>
+
+            
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2407.12294" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+
+                      <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/VISION-SJTU/VEON" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                
+                      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Perceiving the world as 3D occupancy supports embodied agents to avoid collisions with any type of obstacle. While open-vocabulary image understanding has prospered recently, how to bind the predicted 3D occupancy grids with open-world semantics still remains under-explored due to the lack of large-scale 3D open-vocabulary annotations. 
+Hence, instead of building a whole trainable model from scratch, we propose a novel decoupled pipeline to blend 2D foundation models for 3D occupancy. Specifically, we assemble and adapt both a depth foundation model (e.g., MiDaS) and a vision-language foundation model (e.g., CLIP) to lift the 2D semantics to the 3D space, thereby fulfilling 3D occupancy prediction.  
+To fully leverage these models with strong data prior, we introduce two key adaptations. We first integrate a depth adaptor composed of a Zoedepth head and low-rank adaptation (LoRA), which transforms relative depth to bin depth while preserving depth priors. We then design a lightweight High-resolution Side Adaptor (HSA) for CLIP, enhancing its spatial feature for better scene understanding. 
+Beyond that, we address the long-tail problem by proposing a Priority-Concerned Feature Alignment (PCFA) strategy, which prioritizes rare objects and filters noisy pseudo supervision. 
+We also design a pluggable Deformable Temporal Fusion (DTF) module to aggregate 3D features across multiple sequential frames. 
+With only 46M trainable parameters and zero manual semantic labels, our model, dubbed VEON*, achieves 15.19 mIoU on the large-scale Occ3D-nuScenes dataset. It also dramatically surpasses the previous work by ~20% on the language-driven 3D object retrieval task. 
+Qualitative results further demonstrate the capability of our model to discover rare open-world objects, such as stairs, drainage, trash bags, etc. This proves that our VEON* models are not only label-efficient and parameter-efficient, but also provide precise and fine-grained 3D semantic representation for open-vocabulary scene understanding. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-">
+                        <h1 class="title is-3">Introduction</h2>
+                        <div class="content has-text-justified">
+                            <div>
+                                <td colspan="3"><img src="pics/idea.png" alt="" width="1000" /></td>
+                            </div>
+                            <div class="content has-text-justified">
+                                <p>
+    Main idea of our VEON* framework. 
+    <b>Left: </b> Referring to their strong data prior, 2D vision-language foundation models (e.g., CLIP) greatly benefit open-vocabulary (OV) 2D perception tasks. 
+	Inspired by this, when handling 3D open-vocabulary perception tasks, we propose integrating not only a vision-language foundation model, but also a depth foundation model. 
+		<b> Right: </b> The common pipeline of building a 3D occupancy model is to train a unified 2D backbone for depth estimation and semantic extraction from scratch. 
+	In contrast, we design a decoupled pipeline that assembles and adapts both a depth foundation model (e.g., MiDaS) and a vision-language foundation model (e.g., CLIP), for open-vocabulary 3D occupancy prediction.
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+   <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-">
+                        <h2 class="title is-3">Method</h2>
+                        <div class="content has-text-justified">
+                            <div>
+                                <td colspan="3"><img src="pics/framework.png" alt="" width="1000" /></td>
+                            </div>
+                            <div class="content has-text-justified">
+                                <p>
+Framework overview. Our VEON* consists of two training stages: depth pretraining and occupancy prediction. 
+<b> Left: </b> In the depth pretraining stage (i.e., stage 1), we adapt the MiDaS backbone with a relative-metric-bin depth transformation adaptor to estimate the bin depth for LSS feature lifting. 
+Low-rank adaptation (LoRA) is integrated for enhanced domain transfer. 
+<b> Right: </b> In the occupancy prediction stage (i.e., stage 2), we unleash the power of CLIP via equipping a High-resolution Side Adaptor (HSA). 
+The refined high-resolution CLIP semantic features are lifted via LSS and then passed through 3D convolutions for 3D occupancy. 
+		The network reserves the capability of recognizing open-world objects by aligning the 3D representation with 2D language-aligned embeddings, determined by the 2D open-vocabulary segmentor SAN. 
+    The alignment process is conducted in a priority-concerned manner, prioritizing rare objects.  
+		Besides, the network can optionally exploit temporal information via our Deformable Temporal Fusion (DTF) module for better performance. 
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-">
+                        <h2 class="title is-3">Occupancy Prediction on Occ3D-nuScenes</h2>
+                        <div class="content has-text-justified">
+
+
+
+                            <div class="center-div">
+                                <td colspan="2"><img src="pics/result_main.png" alt="" width="1000"  /></td>
+                            </div>
+                            <div class="content has-text-justified">
+                                <p>
+                                  Performance of our VEON* on Occ3D-nuScenes occupancy benchmark (validation set) without any manual semantic labels. 
+                                  Our VEON* models surpass the previous methods using no semantic labels by large margin. 
+                                  This proves that our VEON* models can learn dense representation in the 3D space that has rich semantic information. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-">
+                        <h2 class="title is-3">Language-Driven Object Retreieval</h2>
+                        <div class="content has-text-justified">
+
+
+
+                            <div class="center-div">
+                                <td colspan="2"><img src="pics/result_retrieval.png" alt="" width="800" /></td>
+                            </div>
+                            <div class="content has-text-justified">
+                                <p>
+                                  Results on the open-vocabulary language-driven object retrieval benchmark proposed in POP-3D. 
+                                  Our VEON* models achieve mAPs between 30% and 41%, significantly outperforming all previous methods. 
+                                  The 3D representation output from VEON* models aligns well with language embeddings of CLIP, with impressive capability of handling open-vocabulary tasks. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-">
+                        <h2 class="title is-3">Visualized Comparison</h2>
+                        <div class="content has-text-justified">
+
+
+
+                            <div>
+                                <td colspan="2"><img src="pics/vis_1.png" alt="" width="1000" /></td>
+                            </div>
+                            <div> </div>
+                          <div>
+                                <td colspan="2"><img src="pics/vis_2.png" alt="" width="1000" /></td>
+                            </div>
+                            <div class="content has-text-justified">
+                                <p>
+Visualization of occupancy prediction on the Occ3D-nuScenes occupancy benchmark (validation set). 
+We select the VEON-L and the VEON*-L-T3 variant without any manual semantic labels, meaning that no 3D semantic labels is needed for obtaining the illustrated results. 
+We visualize the surrounding images (column 1), ground truth and predicted occupancy (columns 2-3), and the retrieval results of certain open-vocabulary classes (columns 4-5). 
+Our VEON/VEON* models demonstrate the strong capability of recognizing unseen objects (in orange), such as stairs, gravel, road signs, trucks, plants, drainage, trash bags, and trash cans. 
+                                </p>
+                            </div>
+                          
+                        </div>
+                    </div>
+    </section>
+
+              
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code> 
+@inproceedings{eccv24-veon,
+  title={VEON: Vocabulary-Enhanced Occupancy Prediction},
+  author={Zheng, Jilai and Tang, Pin and Wang, Zhongdao and Wang, Guoqing and Ren, Xiangxuan and Feng, Bailan and Ma, Chao},
+  booktitle={ECCV},
+  year={2024},
+}
+
+@article{ijcv25-underreview-veon,
+  title={Learning Vocabulary-Enhanced 3D Representation for Occupancy Prediction},
+  author={Zheng, Jilai and Tang, Pin and Wang, Zhongdao and Wang, Guoqing and Ren, Xiangxuan and Feng, Bailan and Ma, Chao},
+  journal={IJCV Under Review},
+  year={2025},
+}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
